@@ -1,0 +1,487 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  height: 80vh;
+  background-image: url("../img/inicio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header-secondary {
+  height: 60vh;
+  background-image: url("../img/inicio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.left-preheader {
+  text-align: center;
+  position:absolute;
+  top: 25%;
+  left: 2%;
+}
+
+.header-contenido {
+  width: 100%;
+  height: 100%;
+  padding: 20% 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+nav ul{
+  background-color:greenyellow ;
+  width: 100%;
+  list-style-type: none; 
+  text-align: center;
+}
+nav li{
+  display: inline-flex;
+}
+nav a{
+  text-decoration:none ;
+  color: black;
+  padding:10px ;
+  width: 150px;
+
+}
+nav li:hover{
+background-color: white;
+}
+
+.carta-overlay{
+  position: relative;
+}
+
+.carta-overlay:hover .overlay-top {
+  height: 100%;
+}
+
+.carta-overlay:hover .overlay-left {
+  width: 100%;
+  left: 0;
+}
+* {
+ box-sizing: border-box;
+        }
+
+.columna {
+            float: left;
+            width: 33%;
+            padding-right: 5px;
+        }
+
+.fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+img {
+/* Para que sea responsiva */
+      width: 70%;
+        }
+
+.overlay-left {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(0, 40, 86, 0.5);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
+}
+.imagen-overlay {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.postre > .carta-overlay > img,
+.pizza > .carta-overlay > img,
+.bebidas >.carta-overlay >img
+{
+  height: 100%;
+}
+
+.overlay-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 40, 86, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.overlay-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 40, 86, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+/*SLIDE DOWN*/
+.overlay-down {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 40, 86, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.carta-overlay:hover .overlay-down {
+  bottom: 0;
+  height: 100%;
+}
+
+ /* la pagina */
+
+
+.marco {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.producto {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.marco:hover > .producto {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1300px) {
+  .header-contenido {
+    padding: 100% 0 0 0;
+  }
+
+  .header-secondary > .header-contenido {
+    width: 50%;
+    height: 100%;
+    padding: 10% 0;
+    background-color: rgba(0, 0, 0,3 );
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 40vh;
+    background-image: url("../img/inicio.jpg");
+    background-size: auto 50vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .header-secondary > .header-contenido {
+    width: 100%;
+    height: 100%;
+    padding: 25% 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .header-contenido > h1 {
+    font-size: 90px;
+  }
+
+  .header-contenido {
+    padding: 50% 0 0 0;
+  }
+
+  .header-contenido > h1 {
+    font-size: 35px;
+  }
+
+  .fondoImagen {
+    height: 40vh;
+  }
+
+  .entrantes {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: 10%;
+  }
+
+  .principales {
+    margin-right: 5%;
+  }
+
+  .marco {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.text-danger {
+    color: #80FF00!important;
+}
+
+/* el login */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: white;
+    
+    margin: 0;
+    background-color: white;
+}
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../img/fondo_difuminado_login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+/* formulario de login */
+#login {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: #719192;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+#login label {
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:#3c4245;
+    
+    margin-top: 15px;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #dfcdc3;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #3c4245;
+    color:#dfcdc3;
+}
+/* formulario de login */
+
+/* seccion de la derecha */
+/* por defecto */
+#derecho {
+    
+    text-align: center;
+    width: 100%;
+    
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#dfcdc3;
+}
+
+.logo-empresa img {
+    width: 60%;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #dfcdc3;
+    
+}
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #dfcdc3;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #719192;
+}
+/* seccion de la derecha */
+
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+@media all and (max-width: 775px)
+{
+    #contenedorcentrado {
+        flex-direction:column-reverse;
+
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+
+        background-color: #5f6769;
+
+        /*opacity: 0.50;
+        filter: alpha(opacity=50);*/
+
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    #login {
+        margin: 0 auto;
+    }
+    
+    #derecho {
+        padding:20px 20px 20px 20px;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+}
+/* ajustar a pantallas con ancho menor o igual a 775px; */

@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Mi estilo CSS -->
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/estilo.css" rel="stylesheet" />
+
+    <title>mi comida</title>
+  </head>
+
+  <body class="bg-dark">
+
+
+    <!-- NAVBAR -->
+     <nav
+      class="navbar navbar-expand-lg navbar-light bg-light animated fadeIn"
+      data-wow-duration="2s"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#comida">Servicios</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-lg-5">
+              <a class="nav-link" href="#">
+                preparación
+              </a>
+            </li>
+
+            <li class="nav-ite me-lg-5"> 
+              <a class="nav-link" href="../paginas/login.html">
+                <i class="fas fa-user"></i> Login</a >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+ 
+    <!-- HEADER -->
+    <header class="animated fadeIn header-secondary">
+      <div class="header-contenido">
+        <h1 class="text-white wow fadeInUp" data-wow-duration="4s">
+          MENÚ
+        </h1>
+      </div>
+    </header>
+    <!-- CONTENIDO -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 bg-dark p-0 m-0 d-none d-lg-block">
+          <div class="sidebar wow fadeInLeft">
+            <h4>ENTRANTES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  canapés
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Sandwich tostado de york y queso
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Sándwich Reuben
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Tortilla de Patatas con Alcachofa y jamon
+                </label>
+              </p>
+            </div>
+            <hr />
+
+            <h4>PLATOS PRINCIPALES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Salmón a la plancha
+                </label>
+              </p>
+
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Solomillo de ternera
+                </label>
+              </p>
+
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Hamburguesa de queso
+                </label>
+              </p>
+
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Ensalada mixta
+                </label>
+              </p>
+            </div>
+            <hr />
+
+            <h4>POSTRES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de queso con fambruesas
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de arándanos
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de manzana con helado casero
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de chocolate
+                </label>
+              </p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="col-lg-9 py-4 wow fadeInRight">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg my-3 d-block d-lg-none ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#"
+          >
+            <i class="fas fa-filter"></i> MENÚ
+          </button>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 pb-lg-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/canapes.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+               canapés  <br />
+                <b class="text-danger">13,55€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/reuben.jpg."
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Sandwich tostado de york y queso  <br />
+                <b class="text-danger">20,34€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/queso.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Sándwich Reuben <br />
+                <b class="text-danger">12,20€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/tortilla.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+              <p class="text-white">
+                 Tortilla de Patatas con Alcachofa y jamon <br />
+                <b class="text-danger">35,99€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-lg-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/salmon.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                salmón a la plancha  <br />
+                <b class="text-danger">24,88€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/solomillo.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Solomillo de ternera <br />
+                <b class="text-danger">10€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/hamburguesa.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Hamburguea de queso  <br />
+                <b class="text-danger">33,33€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/ensalada.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+              <p class="text-white">
+                Ensalada mixta <br />
+                <b class="text-danger">20€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-lg-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/frambuesa.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+               Tarta de queso con Frambuesa <br />
+                <b class="text-danger">29€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/arandanos.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Tarta de Arándanos  <br />
+                <b class="text-danger">19,50€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/manzana.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+
+              <p class="text-white">
+                Tarta de manzana con helado casero  <br />
+                <b class="text-danger">20€</b><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pb-md-0 pb-4">
+              <div class="marco">
+                <img
+                  src="../img/chocolate.jpg"
+                  class="producto"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              </div>
+              <p class="text-white">
+                Tarta de chocolate
+                <small></small> 
+                <b class="text-danger">35€</b><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>HORARIOS</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="lunes" id="lunes" />
+                  lunes:cerrado
+                </label>
+              </p>
+
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="martes" id="martes" />
+                 martes:(9:30-21:00)
+                </label>
+              </p>
+
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="miercoles" id="miercoles" />
+               miercoles: 9am - 10pm
+                </label>
+              </p>
+
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="jueves" id="jueves" />
+               jueves: 11am - 10pm
+                </label>
+              </p>
+
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="viernes" id="viernes" />
+               viernes: 11am - 10pm
+                </label>
+              </p>
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="sabado" id="sabado" />
+               Sabado: 11am - 10pm
+                </label>
+              </p>
+              <p>
+                <label for="horario">
+                  <input type="checkbox" name="domingo" id="domingo" />
+               Domingo: 11am - 10pm
+                </label>
+              </p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+    <!-- Menu -->
+    <div
+      class="modal fade"
+      id="filtros"
+      tabindex="-1"
+      aria-labelledby="filtrosModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen text-white">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h5 class="modal-title" id="filtrosModalLabel">MENÚ</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4>ENTRANTES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  canapes
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Sandwich tostado de york y queso
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Sándwich Reuben
+                </label>
+              </p>
+
+              <p>
+                <label for="entrantes">
+                  <input type="checkbox" name="entrantes" id="entrantes" />
+                  Tortilla de Patatas con Alcachofa de jamón
+                </label>
+              </p>
+            </div>
+            <hr />
+
+            <h4>PLATOS PRINCIPALES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Salmón a la plancha
+                </label>
+              </p>
+
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Solomillo de ternera 
+                </label>
+              </p>
+
+              <p>
+                <label for="principales">
+                  <input type="checkbox" name="principales" id="principales" />
+                  Hamburguesa de queso
+                </label>
+              </p>
+            </div>
+            <hr />
+
+            <h4>POSTRES</h4>
+            <hr />
+            <div class="ps-4">
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de queso con frambuesas
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de arándanos
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de manzana con helado casero
+                </label>
+              </p>
+
+              <p>
+                <label for="postre">
+                  <input type="checkbox" name="postre" id="postre" />
+                  Tarta de chocolate
+                </label>
+              </p>
+    <!-- FOOTER -->
+    <footer class="bg-light container-fluid py-3">
+      <p class="my-auto ps-3">comida de luz &copy; Copyright 2022.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- FontAwesome JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- WOW JS -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
